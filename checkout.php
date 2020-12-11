@@ -34,7 +34,7 @@ if(isset($_GET['product_id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUK ONLINE SHOPPING SYSTEM</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css"> 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -102,13 +102,13 @@ if(isset($_GET['product_id'])){
        <div class="navbar-collapse collapse" id="navigation" ><!--navbar-collapse collapse begin-->
             <div class="padding-nav"><!--paddidng nav begin -->
                <ul class="nav navbar-nav left"><!--nav navbar-nav left begin -->
-                    <li class="active" >
+                    <li >
                         <a href="index.php">Home</a>
                     </li>
                     <li >
                         <a href="shop.php">Shop</a>
                     </li>
-                    <li >
+                    <li class="active" >
                        <?php
 
                        if(isset($_SESSION['customer_email'])){
@@ -173,7 +173,7 @@ if(isset($_GET['product_id'])){
       if(!isset($_SESSION['customer_email'])){
           include("customer/customer_login.php");
       } else {
-          include("payment_options.php");
+          include("payment.php");
       }
     ?>
          </div>  <!-- col-md-9 finish --> 

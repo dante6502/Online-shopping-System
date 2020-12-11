@@ -33,7 +33,7 @@ if(isset($_GET['product_id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUK ONLINE SHOPPING SYSTEM</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css"> 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
